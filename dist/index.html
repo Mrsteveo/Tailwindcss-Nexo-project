@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Tailwind css Plugins -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                fontFamily: {
+                    sans: ["Roboto", "sans-serif"],
+                    body: ["Roboto", "sans-serif"],
+                    mono: ["ui-monospace", "monospace"],
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        };
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <!--  Aos library for Icons -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- W3 School for Icons -->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slider splide -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-[#FFFFFF] flex items-center flex-col">
+
+    <!-- Navigation Bar Starts Here -->
+    <nav
+        class="w-full h-[13vh] md:fixed top-0 left-0 right-0 bg-white border-b-[.5px] z-50 shadow-md shadow-black-500/50 justify-around flex items-center">
+        <div class="w-32 hover:cursor-pointer"><img src="./logo/Nexo-Logo-1280x690.png" alt=""></div>
+        <div>
+            <ul
+                class="hover:cursor-pointer hidden md:flex gap-8 font-sans text-base font-semibold justify-evenly align-middle text-slate-800">
+                <li class="text-blue-800  relative hover:scale-105 transition delay-150 duration-300 ease-in-out">
+                    Markets
+                    <div class="w-[70vw] h-[60vh] hidden bg-slate-500 rounded-2xl top-9 absolute">
+                        <div class="w-4 h-4 ml-5 mt-[-5px] rotate-45 rounded-sm bg-slate-500"></div>
+                    </div>
+                </li>
+                <li class="hover:text-blue-800 hover:scale-105 transition delay-100 duration-500 ease-in-out">Products
+                </li>
+                <li class="hover:text-blue-800 hover:scale-105 transition delay-100 duration-500 ease-in-out">Corporates
+                </li>
+                <li class="hover:text-blue-800 hover:scale-105 transition delay-100 duration-500 ease-in-out">Private
+                    Clints</li>
+                <li class="hover:text-blue-800 hover:scale-105 transition delay-100 duration-500 ease-in-out">Resourses
+                </li>
+                <li class="hover:text-blue-800 hover:scale-105 transition delay-100 duration-500 ease-in-out">Security
+                </li>
+                <li class="hover:text-blue-800 hover:scale-105 transition delay-100 duration-500 ease-in-out">Company
+                </li>
+                <li class="hover:text-blue-800 hover:scale-105 transition delay-100 duration-500 ease-in-out">Sign in
+                </li>
+            </ul>
+        </div>
+        <div class="md:flex justify-around items-center gap-2">
+            <button
+                data-te-ripple-color="light"
+                data-te-ripple-init=""
+                class="w-36 h-8 bg-blue-800 rounded-lg text-white font-semibold shadow-xl shadow-black-700">Get
+                Started</button>
+            <button class="w-12 h-8 rounded-lg shadow-inner shadow-black-700 border-[.2px] border-slate-400"><img src=""
+                    alt="">
+                <i class="fa fa-apple text-lg"></i>
+                <i class="fa fa-play text-lg"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- Navigation Bar Ends Here -->
+
+    <!-- Hero Section Starts Here -->
+    <div class="w-full h-[120vh] bg-blue-900 flex justify-center items-center text-white relative" style="background-size: cover; background-image: url(./logo/arrows.svg);">
+        <div class="flex flex-col">
+            <div class="">
+                <h1 data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1200"
+                    class="text-6xl font-extrabold">Buy, Trade & Store </h1>
+                <h1 data-aos="fade-left text-center" data-aos-offset="200" data-aos-easing="ease-in-sine"
+                    data-aos-duration="1200" class="text-[2.4em] flex items-center font-bold leading-loose">Bitcoin and
+                    60+ Digital Assets</h1>
+                <p class="text-[1.4em] text-slate-200 leading-loose">Grow your crypto wealth and keep it secure with
+                    Nexo.
+                </p>
+            </div>
+            <div class="py-10">
+                <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                    class="inline-block font-mono rounded bg-green-700 px-6 pb-2 pt-2.5 text-lg font-bold uppercase text-white">
+                    Get Started 
+                </button>
+                <button class="text-3xl"><img src="" alt="">
+                    <i class="fa fa-apple mx-3"></i>
+                    <i class="fa fa-play "></i>
+                </button>
+            </div>
+            <div class="flex justify-center ml-5 items-center">
+                <div>
+                    <p class=" leading-loose font-medium text-slate-400">Rated Excellent on</p>
+                    <div class="w-40"><img src="./logo/logo-trustpilot.svg" alt=""></div>
+                </div>
+                <div>
+                    <p class="leading-loose font-medium text-slate-400">Insurance on custodial assets by</p>
+                    <div class="flex w-40 justify-around gap-4">
+                        <div><img src="./logo/logo-ledger.svg" alt=""></div>
+                        <div><img src="./logo/logo-bakkt.svg" alt=""></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="leading-loose font-medium text-slate-400">Real-time attestation by</p>
+                    <div class="w-40"><img src="./logo/logo-moore-white.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <img class="w-[90vh] h-[90vh]" src="./logo/nexo-app@2x.png" alt="">
+        </div>
+    </div>
+    <!-- Hero Section Ends Here -->
+
+    <!-- Slider Section Starts Here -->
+    <div class="w-[80vw] h-[87vh] hidden md:block bg-slate-100 rounded-3xl absolute mt-[97vh]">
+        <!-- Slider buttons start Here -->
+        <div class="flex justify-evenly items-start w-full h-[8vh]">
+            <div onclick="document.getElementById(slider2)"
+                class="bg-white cursor-pointer text-center flex justify-evenly items-center w-[10vw] h-[6vh] rounded-full border-[.2px] border-slate-400 mt-7">
+                <div class="hover:inline-block w-2 h-2 rounded-full bg-orange-600"></div>
+                <p>Buy</p>
+            </div>
+            <div
+                class="bg-white cursor-pointer text-center flex justify-evenly items-center w-[10vw] h-[6vh] rounded-full border-[.2px] border-slate-400 mt-7">
+                <div class="w-2 h-2 rounded-full bg-green-700"></div>
+                <p>Earn</p>
+            </div>
+            <div
+                class="bg-white cursor-pointer text-center flex justify-evenly items-center w-[10vw] h-[6vh] rounded-full border-[.2px] border-slate-400 mt-7">
+                <div class="w-2 h-2 rounded-full bg-blue-900"></div>
+                <p>Exchange</p>
+            </div>
+            <div
+                class="bg-white cursor-pointer text-center flex justify-evenly items-center w-[10vw] h-[6vh] rounded-full border-[.2px] border-slate-400 mt-7">
+                <div class="w-2 h-2 rounded-full bg-blue-700"></div>
+                <p>Borrow</p>
+            </div>
+            <div
+                class="bg-white cursor-pointer text-center flex justify-evenly items-center w-[10vw] h-[6vh] rounded-full border-[.2px] border-slate-400 mt-7">
+                <div class="w-2 h-2 rounded-full bg-blue-900"></div>
+                <p>Nexo Card</p>
+            </div>
+        </div>
+        <!-- Slider buttons Ends Here -->
+
+        <!-- Slider Content Starts Here -->
+        <div class="border-b-[2px] border-b-blue-500"></div>
+        <div class="splide shadow-md shadow-slate-700 rounded-b-3xl" role="group"
+            aria-label="Splide Basic HTML Example">
+            <div class="splide__track shadow-slate-700 rounded-b-3xl">
+                <ul class="splide__list">
+                    <li class="splide__slide" id="slider1">
+                        <div
+                            class="h-[80vh] w-[100%] flex justify-around items-center shadow-md shadow-slate-700 rounded-b-3xl">
+                            <div class="">
+                                <p data-aos="fade-up" data-aos-duration="300"
+                                    class="text-blue-700 font-medium text-sm leading-loose">THE RIGHT PLACE TO</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="font-bold text-2xl">Buy Crypto in Seconds</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="w-80 text-slate-600">Buy 60+ digital assets in seconds with card or instant
+                                    bank transfer.
+                                    Get up to 0.5% in crypto
+                                    rewards on your purchase.</p>
+                                <div class="flex justify-start py-6 gap-6 items-center">
+                                    <button
+                                type="button"
+                                data-te-ripple-init
+                                data-te-ripple-color="light"
+                                    class="w-40 h-12 my-10 mr-6 bg-orange-600 rounded-lg text-white font-semibold shadow-xl shadow-black-700 text-lg  transition duration-150 ease-in-out hover:bg-orange-500 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Buy
+                                    Now <span class="font-bold text-xl"></span></button>
+                                <button class="font-bold text-lg">Learn More
+                                    <i class="fa fa-arrow-right ml-3 bg-orange-600 rounded-full text-white text-center px-[9px] py-[8px]"></i>
+                                </button>
+                                </div>
+                            </div>
+                            <div class="w-[30vw] h-[33vw]">
+                                <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                                    src="./logo/slider-buy-us@2x.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide" id="slider2">
+                        <div
+                            class="h-[80vh] w-[100%] flex justify-around items-center shadow-md shadow-slate-700 rounded-b-3xl">
+                            <div class="">
+                                <p data-aos="fade-up" data-aos-duration="300"
+                                    class="text-blue-700 font-medium text-sm leading-loose">THE RIGHT PLACE TO</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class=" font-bold text-2xl">Grow Your Passive Income</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="w-80 text-slate-600">Earn daily interest on your digital assets. Top up
+                                    crypto
+                                    and start growing your wealth automatically without having to do anything yourself.
+                                </p>
+                                <div class="flex justify-start py-6 gap-6 items-center">
+                                    <button
+                                type="button"
+                                data-te-ripple-init
+                                data-te-ripple-color="light"
+                                    class="w-40 h-12 my-10 mr-6 bg-green-700 rounded-lg text-white font-semibold shadow-xl shadow-black-700 text-lg transition duration-150 ease-in-out hover:bg-green-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Start
+                                    Earning
+                                    <span class="font-bold text-xl"></span></button>
+                                <button class="font-bold text-lg">Learn More
+                                    <i class="fa fa-arrow-right ml-3 bg-green-700 rounded-full text-white text-center px-[9px] py-[8px]"></i>
+                                </button>
+                                </div>
+                            </div>
+                            <div class="w-[30vw] h-[33vw]">
+                                <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                                    src="./logo/slider-earn.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div
+                            class="h-[80vh] w-[100%] flex justify-around items-center shadow-md shadow-slate-700 rounded-b-3xl">
+                            <div class="">
+                                <p data-aos="fade-up" data-aos-duration="300"
+                                    class="text-blue-700 font-medium text-sm leading-loose">THE RIGHT PLACE TO</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class=" font-bold text-2xl w-80">Get the Most Out of Your Swaps</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="w-80 text-slate-600">Exchange between 500+ market pairs with zero fees. Buy,
+                                    sell, or swap all major cryptocurrencies at competitive prices in seconds.</p>
+                                <div class="flex justify-start py-6 gap-6 items-center">
+                                    <button
+                                type="button"
+                                data-te-ripple-init
+                                data-te-ripple-color="light"
+                                    class="w-40 h-12 my-10 mr-6 bg-blue-900 rounded-lg text-white font-semibold shadow-xl shadow-black-700 text-lg transition duration-150 ease-in-out hover:bg-blue-800 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Exchange
+                                    Now <span class="font-bold text-xl"></span></button>
+                                <button class="font-bold text-lg">Learn More
+                                    <i class="fa fa-arrow-right ml-3 bg-blue-900 rounded-full text-white text-center px-[9px] py-[8px]"></i>
+                                </button>
+                                </div>
+                            </div>
+                            <div class="w-[30vw] h-[33vw]">
+                                <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                                    src="./logo/slider-exchange.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div
+                            class="h-[80vh] w-[100%] flex justify-around items-center shadow-md shadow-slate-700 rounded-b-3xl">
+                            <div class="">
+                                <p data-aos="fade-up" data-aos-duration="300"
+                                    class="text-blue-700 font-medium text-sm leading-loose">THE RIGHT PLACE TO</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class=" font-bold text-2xl w-80">Borrow Against Your Digital Assets</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="w-80 text-slate-600">Get liquidity against your crypto at 0% APR with our
+                                    Instant Crypto Credit Lines. Receive cash or stablecoins to grow your portfolio or
+                                    even finance your real estate purchase.</p>
+                                <div class="flex justify-start py-6 gap-6 items-center">
+                                    <button
+                                type="button"
+                                data-te-ripple-init
+                                data-te-ripple-color="light"
+                                    class="w-40 h-12 my-10 mr-6 bg-blue-700 rounded-lg text-white font-semibold shadow-xl shadow-black-700 text-lg transition duration-150 ease-in-out hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">Borrow
+                                    Now <span class="font-bold text-xl"></span></button>
+                                <button class="font-bold text-lg">Learn More
+                                    <i class="fa fa-arrow-right ml-3 bg-blue-700 rounded-full text-white text-center px-[9px] py-[8px]"></i>
+                                </button>
+                                </div>
+                            </div>
+                            <div class="w-[30vw] h-[33vw]">
+                                <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                                    src="./logo/slider-borrow.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <div
+                            class="h-[80vh] w-[100%] flex justify-around items-center shadow-md shadow-slate-700 rounded-b-3xl">
+                            <div class="">
+                                <p data-aos="fade-up" data-aos-duration="300"
+                                    class="text-blue-700 font-medium text-sm leading-loose">THE RIGHT PLACE TO</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class=" font-bold text-2xl w-80">Get a Crypto Card</p>
+                                <p data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="w-80 text-slate-600">Spend without selling your cryptocurrencies with the
+                                    Nexo
+                                    Card and get up to 2% back on every purchase. All your expenses are financed by a
+                                    credit line, starting at 0% APR.
+                                </p>
+                                <div class="flex justify-start py-6 gap-6 items-center">
+                                    <button
+                                type="button"
+                                data-te-ripple-init
+                                data-te-ripple-color="light"
+                                    class="w-52 h-12 my-10 mr-6 bg-blue-900 rounded-lg text-white font-semibold shadow-xl shadow-black-700 text-lg transition duration-150 ease-in-out hover:bg-blue-800 ">Get
+                                    Nexo Card
+                                    <span class="font-bold text-xl"></span></button>
+                                <button class="font-bold text-lg">Learn More
+                                    <i class="fa fa-arrow-right ml-3 bg-blue-900 rounded-full text-white text-center px-[9px] py-[8px]"></i>
+                                </button>
+                                </div>
+                            </div>
+                            <div class="w-[30vw] h-[33vw]">
+                                <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+                                    src="./logo/slider-card.png" alt="">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Slider Content Ends Here -->
+    </div>
+    </div>
+    <!-- Slider Section Ends Here -->
+
+
+    <!-- Public Section Starts Here -->
+    <div class="flex justify-around items-end w-full h-[100vh] mb-20">
+        <div class="">
+            <p class="text-4xl font-bold text-blue-700">$130B+</p>
+            <p class="text-slate-600">Processed in</p>
+            <p class="text-slate-600">5+ years</p>
+        </div>
+        <div class="">
+            <p class="text-4xl font-bold text-blue-700">5M+</p>
+            <p class="text-slate-600">Nexo users</p>
+            <p class="text-slate-600">worldwide</p>
+        </div>
+        <div class="">
+            <p class="text-4xl font-bold text-blue-700">60+</p>
+            <p class="text-slate-600">Supported</p>
+            <p class="text-slate-600">cryptocurrencies</p>
+        </div>
+        <div class="">
+            <p class="text-4xl font-bold text-blue-700">200+</p>
+            <p class="text-slate-600">Available in</p>
+            <p class="text-slate-600">jurisdictions</p>
+        </div>
+    </div>
+    <!-- Public Section Ends Here -->
+
+    <!-- Card Section Starts Here -->
+    <div class="w-[90vw] h-[77vh] shadow-lg shadow-slate-400 rounded-3xl flex justify-around items-center"
+        style="background-image: url(./logo/nexo-pro-cta-background@2x.jpg); background-size: cover;">
+        <div>
+            <p class="text-white text-4xl font-semibold w-80 mb-5">The Right Place to Become a Pro</p>
+            <p class="text-slate-500 text-lg font-semibold w-80">Trade crypto with aggregated liquidity on Nexo Pro.
+                Place market and limit orders, execute automated
+                strategies, trade with margin, and open futures contracts.</p>
+            <button class="bg-transparent font-bold text-xl text-slate-200">Start Trading</button>
+            <i class="fa fa-arrow-right ml-3 bg-indigo-300 rounded-full text-white text-center px-[9px] py-[8px]"></i>
+        </div>
+        <div>
+            <img class="w-[45vw]" src="./logo/nexo-pro-cta-charts-mobile.png" alt="">
+        </div>
+    </div>
+    <!-- Card Section Ends Here -->
+
+    <!-- Trading Cards Starts Here -->
+    <div class="flex w-full h-[140vh] flex-col md:flex-row justify-center md:gap-6 items-center">
+        <div
+            class="shadow-sm shadow-slate-400 w-[90vw] md:w-[43vw] h-[130vh] md:h-[110vh] rounded-3xl flex justify-center items-center flex-col bg-slate-100">
+            <div>
+                <p class="text-blue-600 font-medium- w-80 mb-5">THE RIGHT PLACE TO</p>
+                <p class="text-black text-3xl font-semibold w-96 mb-5">Bring Your Friends and Win Rewards</p>
+                <p class="text-slate-700 text-lg w-96">Trade crypto with aggregated liquidity on Nexo Pro.
+                    Place market and limit orders, execute automated
+                    strategies, trade with margin, and open futures contracts.</p>
+                <button class="bg-transparent font-medium text-xl text-black">Start Trading</button>
+                <i class="fa fa-arrow-right ml-3 bg-blue-900 rounded-full text-white text-center px-[9px] py-[8px]"></i>
+            </div>
+            <div class="flex items-end">
+                <img class="w-56" src="./logo/visual_referral_02@2x.png" alt="">
+            </div>
+        </div>
+        <div
+            class="shadow-sm shadow-slate-400 w-[90vw] md:w-[43vw] h-[130vh] md:h-[110vh] rounded-3xl flex justify-center items-center flex-col bg-slate-100">
+            <div>
+                <p class="text-blue-600 font-medium- w-80 mb-5">THE RIGHT PLACE TO</p>
+                <p class="text-black text-3xl font-semibold w-96 mb-5">Grow with Your Community</p>
+                <p class="text-slate-700 text-lg w-96">Earn a revenue share by joining Nexo's Affiliate Program. Make
+                    money every time an invited user earns interest, swaps, or borrows funds.</p>
+                <button class="bg-transparent font-medium text-xl text-black">Become an Affiliate</button>
+                <i class="fa fa-arrow-right ml-3 bg-blue-900 rounded-full text-white text-center px-[9px] py-[8px]"></i>
+            </div>
+            <div class="flex justify-end items-baseline">
+                <img class="w-56" src="./logo/visual_affiliate_02.png" alt="">
+            </div>
+        </div>
+        <div class="w[36vw] h-[60vh] rounded-3xl flex justify-center items-center flex-col bg-black "></div>
+    </div>
+    <!-- Trading Cards Starts Here  -->
+
+    <!-- Logo Section Starts Here  -->
+    <div class="w-full h-[60vh] flex flex-col justify-center items-center">
+        <p class="text-3xl font-medium">As Featured in</p>
+        <div class="flex justify-center gap-9 items-center cursor-pointer flex-wrap my-7">
+            <div class="w-30 hover:scale-105 flex items-center">
+                <img src="./logo/brands/wsj-grey (1).svg" alt="">
+            </div>
+            <div class="w-30 hover:scale-105 flex items-center">
+                <img src="./logo/brands/the-washington-post-grey.svg" alt="">
+            </div>
+            <div class="w-30 hover:scale-105 flex items-center">
+                <img src="./logo/brands/reuters-grey.svg" alt="">
+            </div>
+            <div class=" flex hover:scale-105 items-center">
+                <img class="w-36" src="./logo/brands/bloomberg-grey.svg" alt="">
+            </div>
+            <div class="w-30 hover:scale-105 flex items-center">
+                <img src="./logo/brands/fortune-grey.svg" alt="">
+            </div>
+            <div class="w-30 hover:scale-105 flex items-center">
+                <img src="./logo/brands/cnbc-grey.svg" alt="">
+            </div>
+        </div>
+        <div class="flex justify-center gap-9 items-center flex-wrap cursor-pointer leading-loose">
+            <div class="w-28 hover:scale-105 flex items-center">
+                <img src="./logo/brands/coindesk-grey.svg" alt="">
+            </div>
+            <div class=" flex hover:scale-105 items-center">
+                <img class="w-28" src="./logo/brands/the-block-gery.svg" alt="">
+            </div>
+            <div class="w-28 hover:scale-105 flex items-center">
+                <img src="./logo/brands/cointelegraph-grey.svg" alt="">
+            </div>
+            <div class="w-28 hover:scale-105 flex items-center">
+                <img src="./logo/brands/decrypt-grey.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- Logo Section Ends Here  -->
+
+
+    <!-- Awards Section Starts Here  -->
+    <div class="w-full h-[120vh] flex justify-around items-center">
+        <div class="">
+            <p class="w-80 text-2xl font-semibold">Trusted, Award-Winning
+                Digital Asset Platform</p>
+            <p class="w-96 text-slate-700 my-7">See all prestigious awards recognizing Nexo's cutting-edge technology,
+                ease of use, and overall mission
+                to serve as a bridge between traditional and digital finance.</p>
+        </div>
+        <div>
+            <div class="flex justify-around gap-5 cursor-pointer">
+                <img class="w-40 rounded-2xl hover:scale-105" src="./logo/awards/award-3.jpg" alt="">
+                <img class="w-40 rounded-2xl hover:scale-105" src="./logo/awards/award-1.jpg" alt="">
+                <img class="w-40 rounded-2xl hover:scale-105" src="./logo/awards/award-2.jpg" alt="">
+            </div>
+            <div class="flex justify-center my-6 gap-5 cursor-pointer">
+                <img class="w-40 rounded-2xl hover:scale-105" src="./logo/awards/award-4.jpg" alt="">
+                <img class="w-40 rounded-2xl hover:scale-105" src="./logo/awards/award-5.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Awards Section Ends Here  -->
+
+
+    <!-- Portfolio Section Starts Here  -->
+    <div class="flex justify-around items-center rounded-3xl w-[85vw] h-[70vh] bg-blue-800 text-white">
+        <div>
+            <p class="text-2xl font-semibold leading-loose w-96">Grow Your Portfolio on the Go</p>
+            <p class=" w-96">Buy, earn interest on your assets, borrow against them, or swap between 500+ market pairs
+                on the
+                highly-rated Nexo app.</p>
+            <div class="flex justify-start py-6 gap-6 items-center">
+                <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                    class="inline-block font-mono rounded bg-green-700 px-6 pb-2 pt-2.5 text-lg font-bold uppercase text-white">
+                    Get Started <span class="text-2xl font-bold">></span>
+                </button>
+                <button class=" text-2xl"><img src="" alt="">
+                    <i class="fa fa-apple mx-3"></i>
+                    <i class="fa fa-play "></i>
+                </button>
+            </div>
+        </div>
+        <div class="flex mt-28">
+            <img class="w-80" src="./logo/nexo-dashboard@2x.png" alt="">
+        </div>
+    </div>
+    <!-- Portfolio Section Ends Here  -->
+
+
+    <!-- Footer Section Starts Here  -->
+    <footer class="">
+        <div class="flex items-center justify-between w-full h-[50vh]">
+            <div class="w-44">
+                <img src="./logo/Nexo-Logo-1280x690.png" alt="">
+            </div>
+            <div>
+                <p class="text-2xl font-semibold leading-loose">Sign up for updates</p>
+                <input class="border-[.2px] outline-none rounded-md border-slate-500 w-52 h-10 text-center font-mono"
+                    type="text" placeholder="Enter your email">
+            </div>
+            <div>
+                <p class="text-2xl font-semibold leading-loose">Follow us</p>
+                <div class="flex justify-between gap-4 items-center">
+                    <i
+                        class="w-10 h-10 bg-slate-100 shadow-lg shadow-slate-200 text-slate-600 hover:scale-105 cursor-pointer rounded-2xl pt-3 text-center fa fa-facebook"></i>
+                    <i
+                        class="w-10 h-10 bg-slate-100 shadow-lg shadow-slate-200 text-slate-600 hover:scale-105 cursor-pointer rounded-2xl pt-3 text-center fa fa-instagram"></i>
+                    <i
+                        class="w-10 h-10 bg-slate-100 shadow-lg shadow-slate-200 text-slate-600 hover:scale-105 cursor-pointer rounded-2xl pt-3 text-center fa fa-twitter"></i>
+                    <i
+                        class="w-10 h-10 bg-slate-100 shadow-lg shadow-slate-200 text-slate-600 hover:scale-105 cursor-pointer rounded-2xl pt-3 text-center fa fa-youtube"></i>
+                </div>
+            </div>
+            <div>
+                <img class="text-xl text-slate-900" src="./logo/logo-trustpilot.svg" alt="">
+            </div>
+        </div>
+
+        <div class="flex justify-around">
+            <div class="">
+                <p class="text-lg text-slate-900 font-bold leading-loose">Products</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Buy</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Earn</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Exchange</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Borrow</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Booster</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Nexo Card</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Nexo Pro</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Referral</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">NFT Lending</p>
+            </div>
+            <div class="">
+                <p class="text-lg text-slate-900 font-bold leading-loose">Products</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">About</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Security</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Licenses</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Nexo Prime</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Nexo Private</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Nexo Private</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Corporates</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Affiliates</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Careers</p>
+            </div>
+            <div class="">
+                <p class="text-lg text-slate-900 font-bold leading-loose">Products</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Blog</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Media Center</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Help Center</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Contacts</p>
+            </div>
+            <div class="">
+                <p class="text-lg text-slate-900 font-bold leading-loose">Products</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Privacy Policy</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Terms & Conditions</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Services Terms</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Borrow Terms</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Earn Terms</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Exchange Terms</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">DeFi Terms</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Staking Terms</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Nexo Card Terms</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Affiliate Terms</p>
+                <p class="text-slate-600 leading-loose hover:cursor-pointer hover:text-black">Cookies Policy</p>
+            </div>
+            <div class="flex items-start flex-col">
+                <p class="text-lg text-slate-900 font-bold leading-loose">Mobile App</p>
+                <img class="w-40 leading-loose my-5" src="./logo/badge-app-store.svg" alt="">
+                <img class="w-40 leading-loose" src="./logo/badge-google-play.svg" alt="">
+            </div>
+        </div>
+
+        <div class="w-full h-[50vh] flex justify-around items-center">
+            <div class="flex justify-around font-semibold text-slate-700">
+                <i class='fas fa-university'></i>
+                <p>ISO/IEC 27001:2013 Certified Information <br>
+                    Security Management System</p>
+            </div>
+            <div class="flex justify-around font-semibold text-slate-700">
+                <i class='fas fa-university'></i>
+                <p>Licensed & Regulated <br>
+                    Digital Assets Institution</p>
+            </div>
+            <div class="flex justify-around font-semibold text-slate-700">
+                <i class="fas fa-university"></i>
+                <p>Real-Time Reserves <br>
+                    Аttestation
+                </p>
+            </div>
+            <div class="flex justify-around font-semibold text-slate-700">
+                <i class="fas fa-university"></i>
+                <p>English
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center items-center w-full h-[10vh]">
+            <p class="w-[90%] text-xs text-slate-600">All or part of the Nexo Services, some features thereof, or some
+                Digital Assets, are not available in certain jurisdictions, including where restrictions or limitations
+                may apply, as indicated on the Nexo Platform and in the relevant general terms and conditions.</p>
+        </div>
+        <div class="w-full flex justify-center items-center">
+            <p class="w-[90%] text-xs text-slate-600">Copyright 2023 Nexo. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer Section Ends Here  -->
+     
+
+    <!-- tailwind css plugins  -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <!-- Aos library JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Slider JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide');
+            splide.mount();
+
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+</body>
+
+</html>
